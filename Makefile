@@ -8,9 +8,6 @@ PROFILE?= onepiece2money
 build:
 	@echo 'Use "make <something>" to build AMIs.'
 
-dns-slave:
-	AWS_PROFILE=${PROFILE} packer build packer-dns-slave.json
-
 ntp:
 	AWS_PROFILE=${PROFILE} packer build packer-ntp.json
 
